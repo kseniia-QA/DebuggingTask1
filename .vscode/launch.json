@@ -3,8 +3,10 @@
     "configurations": [
         {
             "name": "Launch Program",
+            "type": "chrome",
             "program": "${workspaceFolder}/app.js",
             "request": "launch",
+            "file": "index.html",
             "skipFiles": [
                 "<node_internals>/**"
             ],
@@ -26,12 +28,6 @@
             "url": "http://localhost:8080",
             "webRoot": "${workspaceFolder}"
         },
-      {
-        "name": "Launch index.html", // название конфигурации(конфигураций может быть много, сделано для удобства запуска из debug-панели в VS Code)
-        "type": "chrome", // название браузера(который должен быть установлен) в котором будет открыт тестируемый файл
-        "request": "launch", // команда, которую необходимо выполнить дебагеру
-        "file": "index.html" // название файла, к которому применить команду из пункта "request"
-      }
-    ]
+ 
   }
   
